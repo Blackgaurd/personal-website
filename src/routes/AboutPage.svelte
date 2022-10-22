@@ -32,17 +32,3 @@
 		>.
 	</h3>
 </div>
-
-<style>
-	.nav-link {
-		padding-bottom: 2px;
-		background: center bottom linear-gradient(#fca311, #fca311); /*accent*/
-		background-size: 0% 2px;
-		background-repeat: no-repeat;
-		transition: all 0.2s;
-	}
-
-	.nav-link:hover {
-		background-size: 100% 2px;
-	}
-</style>
