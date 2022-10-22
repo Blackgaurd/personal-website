@@ -1,4 +1,6 @@
 <script lang="ts">
+	import AboutPage from "./AboutPage.svelte";
+
 	import HomePage from "./HomePage.svelte";
 
 	import Navbar from "./Navbar.svelte";
@@ -36,39 +38,7 @@
 	<div class="flex flex-col">
 		<HomePage />
 
-		<div id="about" class="shadow-inner px-28 py-36 bg-dark-main">
-			<!--about me-->
-			<h1 class="text-5xl font-bold mb-7 text-accent">About Me</h1>
-			<h3 class="text-xl leading-relaxed text-light-main">
-				<i>Hey there!</i> I'm Bryan, a high school and IB student from Toronto, Ontario. I wish to
-				pursue a degree in computer science or mathematics. My current interests include
-				<a class="text-accent nav-link" href="https://www.kaggle.com/blackgaurd">
-					machine learning
-				</a>, mathematical modelling and low-level programming.
-				<br /><br />
-				I taught myself the Python programming language back in 2019, and have been honing my skills
-				ever since. My current arsenal consists of several more languages, namely C++, Java, Typescript,
-				LaTeX, and Julia. I also have experience with front-end web development, building websites such
-				as this one using my stack of choice: Svelte, TailwindCSS and Typescript. Check out my
-				<a href="#projects" on:click={smooth_scroll}>other projects</a> below!
-				<br /><br />
-				Outside of school, I've trained to
-				<a
-					class="text-accent nav-link"
-					href="https://www.sportstats.ca/display-results.xhtml?raceid=114381&status=results&bib=7957"
-					>run a half-marathon under 2 hours</a
-				>, built my own keyboard, learned to
-				<a
-					class="text-accent nav-link"
-					href="https://www.worldcubeassociation.org/persons/2019DENG28"
-				>
-					solve a Rubik's Cube in under 20 seconds
-				</a>, and participated in a few
-				<a class="text-accent nav-link" href="https://github.com/Blackgaurd/IgnitionHacks2022"
-					>hackathons</a
-				>.
-			</h3>
-		</div>
+		<AboutPage />
 
 		<div id="projects" class="px-10 py-20 xl:px-28">
 			<!--projects-->
