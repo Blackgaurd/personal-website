@@ -2,8 +2,7 @@
 	import { smooth_scroll } from "../utils";
 </script>
 
-<div id="about" class="py-24 shadow-inner px-14 lg:px-28 lg:py-36 bg-dark-main">
-	<!--about me-->
+<div id="about" class="px-10 py-24 shadow-inner sm:px-14 lg:px-28 lg:py-36 bg-dark-main">
 	<h1 class="text-5xl font-bold mb-7 text-accent">About Me</h1>
 	<h3 class="text-xl leading-9 lg:leading-relaxed text-light-main">
 		<i>Hey there!</i> I'm Bryan, a high school and IB student from Toronto, Ontario. I wish to
