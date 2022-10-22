@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { W_SM } from "../screen_widths";
+
 	function smooth_scroll(event: MouseEvent) {
 		event.preventDefault();
 		const target = event.target as HTMLAnchorElement;
@@ -16,13 +18,6 @@
 	let scrollY: number;
 	let innerHeight: number;
 	let innerWidth: number;
-
-	const W_SM = 640,
-		W_MD = 768,
-		W_LG = 1024,
-		W_XL = 1280,
-		W_2XL = 1536,
-		W_3XL = 2000;
 
 	let hamburger_open = false;
 
@@ -119,13 +114,13 @@
 					<p class="hidden">Bryan Deng</p>
 				{:else}
 					<p class="p-2 md:text-lg md:p-3 text-accent" style="opacity: {nav_opacity};">
-						<a href="#home" class="nav-link" on:click={smooth_scroll}>Bryan Deng {innerWidth}</a>
+						<a href="#home" class="nav-link" on:click={smooth_scroll}>Bryan Deng</a>
 					</p>
 				{/if}
 			</div>
 			<div class="flex justify-end w-1/2 space-x-10 md:space-x-28">
 				<p class="p-2 md:text-lg md:p-3 text-accent">
-					<a href="#about" class="nav-link" on:click={smooth_scroll}>About</a>
+					<a href="#about" class="nav-link" on:click={smooth_scroll}>About {innerWidth}</a>
 				</p>
 				<p class="p-2 md:text-lg md:p-3 text-accent">
 					<a href="#projects" class="nav-link" on:click={smooth_scroll}>Projects</a>
