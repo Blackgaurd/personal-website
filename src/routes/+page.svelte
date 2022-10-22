@@ -7,25 +7,9 @@
 
 	import Project from "./Project.svelte";
 
-	function smooth_scroll(event: MouseEvent) {
-		event.preventDefault();
-		const target = event.target as HTMLAnchorElement;
-		const id = target.getAttribute("href") || "";
-		const element = document.querySelector(id);
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
-	}
-
-	// TODO: add more quotes
-	const quotes = ["taking on high school one project at a time"];
-	const QUOTE = quotes[Math.floor(Math.random() * quotes.length)];
-
 	let scrollY: number;
 	let innerHeight: number;
 	let innerWidth: number;
-
-	$: nav_opacity = Math.min(1, scrollY / innerHeight);
 </script>
 
 <svelte:window bind:scrollY bind:innerHeight bind:innerWidth />

@@ -1,15 +1,7 @@
 <script lang="ts">
     import { W_SM } from "../screen_widths";
+	import { smooth_scroll } from "../utils";
 
-	function smooth_scroll(event: MouseEvent) {
-		event.preventDefault();
-		const target = event.target as HTMLAnchorElement;
-		const id = target.getAttribute("href") || "";
-		const element = document.querySelector(id);
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
-	}
 	function close_burger_scroll(event: MouseEvent) {
 		hamburger_open = false;
 		smooth_scroll(event);

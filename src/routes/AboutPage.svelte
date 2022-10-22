@@ -1,13 +1,5 @@
 <script lang="ts">
-	function smooth_scroll(event: MouseEvent) {
-		event.preventDefault();
-		const target = event.target as HTMLAnchorElement;
-		const id = target.getAttribute("href") || "";
-		const element = document.querySelector(id);
-		if (element) {
-			element.scrollIntoView({ behavior: "smooth" });
-		}
-	}
+	import { smooth_scroll } from "../utils";
 </script>
 
 <div id="about" class="py-24 shadow-inner px-14 lg:px-28 lg:py-36 bg-dark-main">
@@ -21,9 +13,11 @@
 		<br /><br />
 		I taught myself the Python programming language back in 2019, and have been honing my skills ever
 		since. My current arsenal consists of several more languages, namely C++, Java, Typescript, LaTeX,
-		and <a class="text-accent nav-link" href="https://julialang.org/">Julia</a>. I also have experience with front-end web development, building websites such as this
-		one using my stack of choice: Svelte, TailwindCSS and Typescript. Check out my
-		<a class="text-accent nav-link" href="#projects" on:click={smooth_scroll}>other projects</a> below!
+		and <a class="text-accent nav-link" href="https://julialang.org/">Julia</a>. I also have
+		experience with front-end web development, building websites such as this one using my stack of
+		choice: Svelte, TailwindCSS and Typescript. Check out my
+		<a class="text-accent nav-link" href="#projects" on:click={smooth_scroll}>other projects</a>
+		below!
 		<br /><br />
 		Outside of school, I've trained to
 		<a
