@@ -112,7 +112,7 @@
 			</div>
 			<div class="flex justify-end w-1/2 space-x-10 md:space-x-28">
 				<p class="p-2 md:text-lg md:p-3 text-accent">
-					<a href="#about" class="nav-link" on:click={smooth_scroll}>About {innerWidth}</a>
+					<a href="#about" class="nav-link" on:click={smooth_scroll}>About</a>
 				</p>
 				<p class="p-2 md:text-lg md:p-3 text-accent">
 					<a href="#projects" class="nav-link" on:click={smooth_scroll}>Projects</a>
