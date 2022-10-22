@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Navbar from './Navbar.svelte';
+
 	import Project from "./Project.svelte";
 
 	function smooth_scroll(event: MouseEvent) {
@@ -17,55 +19,38 @@
 
 	let scrollY: number;
 	let innerHeight: number;
+	let innerWidth: number;
 
 	$: nav_opacity = Math.min(1, scrollY / innerHeight);
+
+	const W_SM = 640,
+		W_MD = 768,
+		W_LG = 1024,
+		W_XL = 1280,
+		W_2XL = 1536,
+		W_3XL = 2000;
 </script>
 
-<svelte:window bind:scrollY bind:innerHeight />
+<svelte:window bind:scrollY bind:innerHeight bind:innerWidth />
 
 <main class="flex flex-col h-screen relative">
 	<!--navbar-->
-	<nav
-		class="top-0 w-full fixed shadow-md z-30"
-		style="background-color: rgba(20,33,61,{nav_opacity});"
-	>
-		<div class="flex py-3 px-8">
-			<div class="w-1/2">
-				{#if scrollY === 0}
-					<!--keep a ghost element to not mess with the spacing of the rest of nav-->
-					<p class="hidden">Bryan Deng</p>
-				{:else}
-					<p class="text-accent text-lg p-3" style="opacity: {nav_opacity};">
-						<a href="#home" class="nav-link" on:click={smooth_scroll}>Bryan Deng</a>
-					</p>
-				{/if}
-			</div>
-			<div class="w-1/2 flex justify-end space-x-28">
-				<p class="text-lg text-accent p-3">
-					<a href="#about" class="nav-link" on:click={smooth_scroll}>About</a>
-				</p>
-				<p class="text-lg text-accent p-3">
-					<a href="#projects" class="nav-link" on:click={smooth_scroll}>Projects</a>
-				</p>
-				<a
-					href="resume.pdf"
-					class="text-lg text-dark-main bg-accent p-3 rounded-md shadow-md hover:shadow-sm duration-75"
-					>Resume
-				</a>
-			</div>
-		</div>
-	</nav>
+	<Navbar></Navbar>
 
 	<!--main content-->
-	<div class="">
+	<div>
 		<div class="flex flex-col">
 			<div id="home" class="h-screen flex relative">
 				<!--main page-->
 				<div class="m-auto text-center">
-					<h1 class="text-8xl text-accent font-extrabold cursor-default">Bryan Deng.</h1>
-					<h3 class="p-1 my-6 text-xl text-dark-main cursor-default">
+					<h1 class="3xl:text-8xl text-6xl text-accent font-extrabold cursor-default">
+						Bryan Deng.
+					</h1>
+					<h3 class="p-1 my-6 3xl:text-xl text-base text-dark-main cursor-default">
 						<i>{QUOTE}</i><span class="cursor-blink font-semibold">/</span>
 					</h3>
+
+					<!--icons-->
 					<div class="flex justify-center space-x-12 p-2">
 						<a href="https://github.com/Blackgaurd" target="_blank" rel="noopener noreferrer">
 							<i class="scale-250 text-dark-main fa-brands fa-square-github" />
@@ -82,26 +67,26 @@
 						</a>
 					</div>
 				</div>
-				<div class="absolute bottom-3 left-0 right-0 flex">
+				<div class="absolute bottom-0 left-0 right-0 flex">
 					<!--scroll down arrow-->
 					<div class="relative m-auto group">
 						<div>
 							<div
-								class="absolute h-1 w-12 bg-dark-main rotate-45 m-auto -translate-x-4 -translate-y-4"
+								class="absolute h-1 w-12 bg-dark-main rotate-45 m-auto -translate-x-10 -translate-y-8"
 								style={`opacity: ${1 - nav_opacity * 1.3}`}
 							/>
 							<div
-								class="absolute h-1 w-12 bg-dark-main -rotate-45 m-auto translate-x-4 -translate-y-4"
+								class="absolute h-1 w-12 bg-dark-main -rotate-45 m-auto -translate-x-2 -translate-y-8"
 								style={`opacity: ${1 - nav_opacity * 1.3}`}
 							/>
 						</div>
 						<div>
 							<div
-								class="absolute h-1 w-12 bg-dark-main rotate-45 m-auto -translate-x-4 -translate-y-8"
+								class="absolute h-1 w-12 bg-dark-main rotate-45 m-auto -translate-x-10 -translate-y-12"
 								style={`opacity: ${1 - nav_opacity * 1.3}`}
 							/>
 							<div
-								class="absolute h-1 w-12 bg-dark-main -rotate-45 m-auto translate-x-4 -translate-y-8"
+								class="absolute h-1 w-12 bg-dark-main -rotate-45 m-auto -translate-x-2 -translate-y-12"
 								style={`opacity: ${1 - nav_opacity * 1.3}`}
 							/>
 						</div>
@@ -130,12 +115,12 @@
 						class="text-accent nav-link"
 						href="https://www.sportstats.ca/display-results.xhtml?raceid=114381&status=results&bib=7957"
 						>run a half-marathon under 2 hours</a
-					>, learned to
+					>, built my own keyboard, learned to
 					<a
 						class="text-accent nav-link"
 						href="https://www.worldcubeassociation.org/persons/2019DENG28"
 					>
-						solve a Rubik's Cube under 20 seconds
+						solve a Rubik's Cube in under 20 seconds
 					</a>, and participated in a few
 					<a class="text-accent nav-link" href="https://github.com/Blackgaurd/IgnitionHacks2022"
 						>hackathons</a
@@ -143,7 +128,7 @@
 				</h3>
 			</div>
 
-			<div id="projects" class="px-28 py-20">
+			<div id="projects" class="xl:px-28 py-20 px-10">
 				<!--projects-->
 				<div class="m-4 space-y-2">
 					<h1 class="text-5xl font-bold text-accent">Projects</h1>
@@ -154,7 +139,7 @@
 				<!--using flexbox bc grid cant center last row-->
 				<div class="flex flex-wrap justify-center">
 					<!--TODO: add how many objects were in the torus render-->
-					<div class="w-1/2">
+					<div class="3xl:w-1/2 m-auto">
 						<div class="m-2">
 							<Project
 								name="RayJL"
@@ -166,7 +151,7 @@
 							/>
 						</div>
 					</div>
-					<div class="w-1/2">
+					<div class="3xl:w-1/2 m-auto">
 						<div class="m-2">
 							<Project
 								name="GDT"
@@ -178,7 +163,7 @@
 							/>
 						</div>
 					</div>
-					<div class="w-1/2">
+					<div class="3xl:w-1/2 m-auto">
 						<div class="m-2">
 							<Project
 								name="TI-84 Wordle"

@@ -27,7 +27,7 @@
 			<p><i class="text-accent">{tools.join(", ")}</i></p>
 		</div>
 		<p class="text-xl text-left text-dark-main">~</p>
-		<p class="text-lg text-dark-main">{project_description}</p>
+		<p class="3xl:text-lg lg:text-2xl text-lg text-dark-main">{project_description}</p>
 	</div>
 	<div />
 	<div class="relative w-1/2 group">
