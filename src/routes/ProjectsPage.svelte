@@ -39,6 +39,18 @@
 		<div class="my-1 3xl:w-1/2">
             <div class="3xl:mx-1">
                 <Project
+				name="AP Calc BC Notes"
+				url="https://github.com/Blackgaurd/AP-CalcBC-Notes"
+				image_path="images/calc.png"
+				image_description="A screenshot of the notes (Taylor Series section)."
+				project_description="Complete set of notes for the AP Calculus BC course (100+ pages). Includes all units, as well as practice problems and solutions explained in rigurous detail."
+				tools={["LaTeX"]}
+                />
+            </div>
+		</div>
+		<div class="my-1 3xl:w-1/2">
+            <div class="3xl:mx-1">
+                <Project
 				name="TI-84 Wordle"
 				url="https://github.com/Blackgaurd/TI84-Wordle"
 				image_path="images/wordle.jpg"

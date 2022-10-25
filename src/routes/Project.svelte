@@ -17,7 +17,7 @@
 		<!--github link-->
 		<div class="absolute flex group right-4 top-3">
 			<div
-				class="relative hidden px-1 mr-4 rounded-r-sm group-hover:block bg-light-main text-dark-main rounded-l-md"
+				class="relative hidden px-1 mr-4 rounded-r-sm group-hover:block bg-light-main text-dark-main rounded-l-md shadow-md"
 			>
 				<div class="absolute w-2 h-2 rotate-45 bg-light-main -right-1 top-2" />
 				<span>See the code!</span>
