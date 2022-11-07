@@ -41,6 +41,14 @@ export const projects: Project[] = [
         image_description: "A demonstration of the compiled game being played on a TI-84 Plus CE.",
     },
     {
+        name: "fastcontain",
+        url: "https://github.com/Blackgaurd/fastcontain",
+        tools: ["Python", "Cython"],
+        project_description: "An alternative to Python's built-in 'in' operator written in Cython using string hashing. Almost as fast as the native C implementation.",
+        image_path: "images/fastcontain.png",
+        image_description: "A snippet of the source code for the fastcontain module.",
+    },
+    {
         name: "YourSleep",
         url: "https://github.com/Blackgaurd/IgnitionHacks2022",
         tools: ["Svelte", "TailwindCSS", "Typescript", "Java"],
