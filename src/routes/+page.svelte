@@ -1,10 +1,9 @@
 <script lang="ts">
-  import Footer from './Footer.svelte';
-
-	import ProjectsPage from "./ProjectsPage.svelte";
-	import AboutPage from "./AboutPage.svelte";
-	import HomePage from "./HomePage.svelte";
-	import Navbar from "./Navbar.svelte";
+	import Navbar from "../components/Navbar.svelte";
+	import HomePage from "../components/HomePage.svelte";
+	import AboutPage from "../components/AboutPage.svelte";
+	import ProjectsPage from "../components/ProjectsPage.svelte";
+	import Footer from "../components/Footer.svelte";
 </script>
 
 <main class="relative flex flex-col h-screen">
@@ -19,6 +18,6 @@
 
 		<ProjectsPage />
 
-		<Footer></Footer>
+		<Footer />
 	</div>
 </main>
