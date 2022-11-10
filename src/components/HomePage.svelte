@@ -39,23 +39,23 @@
     <!--scroll down arrow-->
 	<div class="absolute bottom-0 left-0 right-0 flex">
 		<div class="relative m-auto group">
-			<div>
+			<div class="animate-bounce-top">
 				<div
-					class="absolute w-12 h-1 m-auto rotate-45 -translate-x-10 -translate-y-8 bg-dark-main"
+					class="absolute w-12 h-1 m-auto rotate-45 -translate-x-10 bg-dark-main"
 					style={`opacity: ${1 - arrow_opacity * 1.3}`}
 				/>
 				<div
-					class="absolute w-12 h-1 m-auto -rotate-45 -translate-x-2 -translate-y-8 bg-dark-main"
+					class="absolute w-12 h-1 m-auto -rotate-45 -translate-x-2 bg-dark-main"
 					style={`opacity: ${1 - arrow_opacity * 1.3}`}
 				/>
 			</div>
-			<div>
+			<div class="animate-bounce-bottom">
 				<div
-					class="absolute w-12 h-1 m-auto rotate-45 -translate-x-10 -translate-y-12 bg-dark-main"
+					class="absolute w-12 h-1 m-auto rotate-45 -translate-x-10 bg-dark-main"
 					style={`opacity: ${1 - arrow_opacity * 1.3}`}
 				/>
 				<div
-					class="absolute w-12 h-1 m-auto -rotate-45 -translate-x-2 -translate-y-12 bg-dark-main"
+					class="absolute w-12 h-1 m-auto -rotate-45 -translate-x-2 bg-dark-main"
 					style={`opacity: ${1 - arrow_opacity * 1.3}`}
 				/>
 			</div>
@@ -72,5 +72,38 @@
 
 	.cursor-blink {
 		animation: blink 1s steps(2) infinite;
+	}
+
+	@keyframes bounce-top {
+		0% {
+			transform: translateY(-3rem);
+		}
+		50% {
+			transform: translateY(-3.25rem);
+		}
+		100% {
+			transform: translateY(-3rem);
+		}
+	}
+
+	.animate-bounce-top {
+		animation: bounce-top 1s infinite;
+		animation-delay: 50ms;
+	}
+
+	@keyframes bounce-bottom {
+		0% {
+			transform: translateY(-2rem);
+		}
+		50% {
+			transform: translateY(-2.25rem);
+		}
+		100% {
+			transform: translateY(-2rem);
+		}
+	}
+
+	.animate-bounce-bottom {
+		animation: bounce-bottom 1s infinite;
 	}
 </style>
