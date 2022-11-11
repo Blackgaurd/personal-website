@@ -44,6 +44,7 @@
 			src={image_path}
 			alt={`${name} demo image`}
 			class="duration-300 group-hover:opacity-10 group-hover:scale-110"
+			loading="lazy"
 		/>
 	</div>
 </div>
