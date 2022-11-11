@@ -20,23 +20,29 @@
 
 		<!--icons-->
 		<div class="flex justify-center p-2 space-x-12">
-			<a href="https://github.com/Blackgaurd" target="_blank" rel="noopener noreferrer">
+			<a
+				href="https://github.com/Blackgaurd"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="GitHub profile"
+			>
 				<i class="fa-3x text-dark-main fa-brands fa-square-github" />
 			</a>
 			<a
 				href="https://www.linkedin.com/in/bryan-deng-550414200/"
 				target="_blank"
 				rel="noopener noreferrer"
+				aria-label="LinkedIn profile"
 			>
 				<i class="fa-3x text-dark-main fa-brands fa-linkedin" />
 			</a>
-			<a href="mailto://bryan.deng002@gmail.com">
+			<a href="mailto://bryan.deng002@gmail.com" aria-label="Email me">
 				<i class="fa-3x text-dark-main fa-solid fa-square-envelope" />
 			</a>
 		</div>
 	</div>
 
-    <!--scroll down arrow-->
+	<!--scroll down arrow-->
 	<div class="absolute bottom-0 left-0 right-0 flex">
 		<div class="relative m-auto group">
 			<div class="animate-bounce-top">

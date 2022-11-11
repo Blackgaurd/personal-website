@@ -29,6 +29,7 @@
 				href="https://github.com/Blackgaurd"
 				target="_blank"
 				rel="noopener noreferrer"
+				aria-label="GitHub profile"
 			>
 				<i class="md:scale-110 scale-200 -translate-y-0.5 fa-brands fa-github" />
 				<span class="hidden text-lg nav-link md:inline-block">GitHub</span>
@@ -38,11 +39,13 @@
 				href="https://www.linkedin.com/in/bryan-deng-550414200/"
 				target="_blank"
 				rel="noopener noreferrer"
+				aria-label="LinkedIn profile"
 			>
 				<i class="md:scale-110 scale-200 -translate-y-0.5 fa-brands fa-linkedin-in" />
 				<span class="hidden text-lg nav-link md:inline-block">LinkedIn</span>
 			</a>
-			<a class="text-accent" href="mailto://bryan.deng002@gmail.com">
+			<a class="text-accent" href="mailto://bryan.deng002@gmail.com" aria-label="Email me">
+				>
 				<i class="md:scale-110 scale-200 -translate-y-0.5 fa-solid fa-envelope" />
 				<span class="hidden text-lg nav-link md:inline-block">bryan.deng002@gmail.com</span>
 			</a>

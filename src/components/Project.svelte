@@ -22,7 +22,9 @@
 				<div class="absolute w-2 h-2 rotate-45 bg-light-main -right-1 top-2" />
 				<span>See the code!</span>
 			</div>
-			<a href={url} class="text-center"><i class="fa-xl fa-brands fa-github text-accent" /></a>
+			<a href={url} class="text-center" aria-label="View the GitHub repository for {name}"
+				><i class="fa-xl fa-brands fa-github text-accent" /></a
+			>
 		</div>
 
 		<h1 class="text-2xl font-bold lg:text-4xl text-dark-main">{name}</h1>
