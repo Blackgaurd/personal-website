@@ -72,9 +72,9 @@
 						</div>
 						<div class="w-full">
 							<h3 class="text-4xl font-semibold text-center text-accent">
-								<a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link"
-									>RESUME</a
-								>
+								<a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">
+									RESUME
+								</a>
 							</h3>
 						</div>
 					</div>
@@ -98,6 +98,7 @@
 		{/if}
 	</nav>
 {:else}
+	<!--desktop nav-->
 	<nav class="fixed z-30 w-full shadow-md" style="background-color: rgba(20,33,61,{nav_opacity});">
 		<div class="flex p-1 md:px-8 md:py-3">
 			<div class="w-1/2">
