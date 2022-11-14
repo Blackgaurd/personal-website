@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { W_SM } from "../screen_widths";
+	import { W_SM } from "../screen_widths";
 	import { smooth_scroll } from "../utils";
 
 	function close_burger_scroll(event: MouseEvent) {
@@ -57,22 +57,43 @@
 					<div class="flex flex-col space-y-8">
 						<div class="w-full">
 							<h3 class="text-4xl font-semibold text-center text-accent">
-								<a href="#home" class="nav-link" on:click={close_burger_scroll}>HOME</a>
+								<a
+									href="#home"
+									class="nav-link"
+									aria-label="Scroll back to landing page"
+									on:click={close_burger_scroll}>HOME</a
+								>
 							</h3>
 						</div>
 						<div class="w-full">
 							<h3 class="text-4xl font-semibold text-center text-accent">
-								<a href="#about" class="nav-link" on:click={close_burger_scroll}>ABOUT</a>
+								<a
+									href="#about"
+									class="nav-link"
+									aria-label="Scroll to the About Me section"
+									on:click={close_burger_scroll}>ABOUT</a
+								>
 							</h3>
 						</div>
 						<div class="w-full">
 							<h3 class="text-4xl font-semibold text-center text-accent">
-								<a href="#projects" class="nav-link" on:click={close_burger_scroll}>PROJECTS</a>
+								<a
+									href="#projects"
+									class="nav-link"
+									aria-label="Scroll to the Projects section"
+									on:click={close_burger_scroll}>PROJECTS</a
+								>
 							</h3>
 						</div>
 						<div class="w-full">
 							<h3 class="text-4xl font-semibold text-center text-accent">
-								<a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">
+								<a
+									href="resume.pdf"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="nav-link"
+									aria-label="Download my resume"
+								>
 									RESUME
 								</a>
 							</h3>
@@ -80,7 +101,9 @@
 					</div>
 					<div class="flex w-1/2 mx-auto mt-16 justify-evenly">
 						<a href="https://github.com/Blackgaurd" target="_blank" rel="noopener noreferrer">
-							<i class="duration-100 fa-3x text-accent fa-brands fa-square-github hover:scale-110" />
+							<i
+								class="duration-100 fa-3x text-accent fa-brands fa-square-github hover:scale-110"
+							/>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/bryan-deng-550414200/"
@@ -90,7 +113,9 @@
 							<i class="duration-100 fa-3x text-accent fa-brands fa-linkedin hover:scale-110" />
 						</a>
 						<a href="mailto://bryan.deng002@gmail.com">
-							<i class="duration-100 fa-3x text-accent fa-solid fa-square-envelope hover:scale-110" />
+							<i
+								class="duration-100 fa-3x text-accent fa-solid fa-square-envelope hover:scale-110"
+							/>
 						</a>
 					</div>
 				</div>

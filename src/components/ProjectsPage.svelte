@@ -8,7 +8,11 @@
 	<div class="mb-3 space-y-2">
 		<h1 class="text-5xl font-bold text-accent">Projects</h1>
 		<p class="text-lg text-dark-main">
-			More on my <a class="underline" href="https://github.com/Blackgaurd">GitHub!</a>
+			More on my <a
+				class="underline"
+				href="https://github.com/Blackgaurd"
+				aria-label="GitHub profile">GitHub!</a
+			>
 		</p>
 	</div>
 	<!--using flexbox bc grid cant center last row-->
