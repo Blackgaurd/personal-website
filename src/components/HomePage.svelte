@@ -7,8 +7,6 @@
 	let innerHeight: number;
 
 	$: arrow_opacity = Math.min(1, scrollY / innerHeight);
-	// letter spacing rom 2 to 5
-	$: letter_spacing = 2 + (scrollY / innerHeight) * 150;
 </script>
 
 <svelte:window bind:scrollY bind:innerHeight />
@@ -16,7 +14,7 @@
 <div id="home" class="relative flex h-screen">
 	<div class="m-auto text-center">
 		<h1 class="font-extrabold cursor-default text-7xl lg:text-8xl text-accent fade-in1">
-			Bryan Deng.
+			Bryan Deng
 		</h1>
 		<h2 class="p-1 my-6 text-base cursor-default 3xl:text-xl text-dark-main fade-in2">
 			<i>{QUOTE}</i>

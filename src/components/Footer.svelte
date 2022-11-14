@@ -48,6 +48,12 @@
 				<i class="md:scale-110 scale-200 -translate-y-0.5 fa-solid fa-envelope" />
 				<span class="hidden text-lg nav-link md:inline-block">bryan.deng002@gmail.com</span>
 			</a>
+			<a href="https://hits.seeyoufarm.com">
+				<img
+					src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fbryandeng.me&count_bg=%2314213D&title_bg=%23FCA311&icon=&icon_color=%23E7E7E7&title=hits"
+					alt="Website hit counter"
+				/>
+			</a>
 		</div>
 	</div>
 
