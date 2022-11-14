@@ -1,4 +1,6 @@
 <script lang="ts">
+	//import IntersectionObserver from "svelte-intersection-observer";
+
 	export let name: string,
 		url: string,
 		image_path: string,
@@ -8,7 +10,7 @@
 </script>
 
 <div
-	class="bg-dark-main lg:rounded-3xl rounded-2xl lg:p-2 p-1 flex md:space-x-1.5 md:space-y-0 space-y-1 w-full shadow-lg flex-col md:flex-row 3xl:aspect-32/11"
+	class="bg-dark-main lg:rounded-3xl rounded-2xl lg:p-2 p-1 flex md:space-x-1.5 md:space-y-0 space-y-1 w-full shadow-lg flex-col md:flex-row 3xl:aspect-32/11 fade-bottom"
 >
 	<!--description-->
 	<div
